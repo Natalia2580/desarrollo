@@ -1,0 +1,287 @@
+/*! Normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+/* Global reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+/* Body */
+body {
+  font-family: 'Roboto', 'Helvetica Neue', sans-serif;
+  background-color: #f9f9f9;
+  color: #444;
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background-color: #2a2a2a;
+  color: #fff;
+  padding: 30px 40px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+header p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #ccc;
+  margin-bottom: 30px;
+}
+
+header .cta {
+  display: inline-block;
+  background-color: #3f50e3;
+  color: #fff;
+  padding: 15px 40px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+header .cta:hover {
+  background-color: #565656;
+  transform: translateY(-3px);
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 20px 50px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar__logo {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.navbar__links {
+  display: flex;
+}
+
+.navbar__link {
+  margin-left: 30px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #444;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navbar__link:hover {
+  color: #7f7f7f;
+}
+
+/* Main Content */
+section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+section h2 {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #2a2a2a;
+  margin-bottom: 30px;
+}
+
+section p {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+section .content-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+section .content-item {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section .content-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+}
+
+.content-item h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #2a2a2a;
+  margin-bottom: 15px;
+}
+
+.content-item p {
+  font-size: 1rem;
+  color: #777;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+footer .footer-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+footer .footer-description {
+  font-size: 1.2rem;
+  color: #bbb;
+  margin-bottom: 40px;
+}
+
+footer .footer-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+footer .footer-link {
+  color: #bbb;
+  font-size: 1.1rem;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+footer .footer-link:hover {
+  color: #7f7f7f;
+}
+
+footer .footer-social {
+  margin-top: 20px;
+}
+
+footer .footer-social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+footer .footer-social-icon {
+  width: 30px;
+  height: 30px;
+  background-color: #444;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+footer .footer-social-icon:hover {
+  background-color: #7f7f7f;
+}
+
+footer .footer-social-icon img {
+  width: 18px;
+  height: 18px;
+}
+
+/* Form */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 15px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: border-color 0.3s ease;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #7f7f7f;
+  outline: none;
+}
+
+form button {
+  background-color: #7f7f7f;
+  color: #fff;
+  padding: 15px 30px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+form button:hover {
+  background-color: #565656;
+  transform: translateY(-3px);
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2.5rem;
+  }
+
+  section h2 {
+    font-size: 2.5rem;
+  }
+
+  footer .footer-title {
+    font-size: 2rem;
+  }
+
+  section .content-container {
+    grid-template-columns: 1fr;
+  }
+}

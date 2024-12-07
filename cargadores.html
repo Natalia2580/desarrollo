@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artículos en Cuadros</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        .header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            background: linear-gradient(90deg, #4a69bd, #6a89cc);
+            color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .header button {
+            background-color: #2c3e50;
+            color: white;
+            padding: 10px 25px;
+            font-size: 1em;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .header button:hover {
+            background-color: #1abc9c;
+            transform: scale(1.1);
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 30px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+        }
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-bottom: 3px solid #4a69bd;
+        }
+        .card-content {
+            padding: 20px;
+        }
+        .card-title {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            color: #2c3e50;
+            font-weight: bold;
+        }
+        .card-description {
+            font-size: 1em;
+            color: #555;
+            line-height: 1.6;
+        }
+        @media (max-width: 768px) {
+            .header {
+                padding: 15px;
+                text-align: center;
+            }
+            .header button {
+                font-size: 0.9em;
+                padding: 8px 20px;
+            }
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="header">
+        <button onclick="window.location.href='index.html';">Inicio</button>
+    </div>
+    
+   
+    <div class="container">
+        
+        <div class="card">
+            <img src="images/carga1.jpg" alt="Artículo 1">
+            <div class="card-content">
+                <h3 class="card-title">Cargador Xion</h3>
+                <p class="card-description">cargador tipo V8 3.1AMP.</p>
+            </div>
+        </div>
+        
+        <div class="card">
+            <img src="images/carga2.jpg" alt="Artículo 2">
+            <div class="card-content">
+                <h3 class="card-title">Cable V8</h3>
+                <p class="card-description">Cable de muy buena calidad.</p>
+            </div>
+        </div>
+        
+        <div class="card">
+            <img src="images/carga3.jpg" alt="Artículo 3">
+            <div class="card-content">
+                <h3 class="card-title">Cargador Harvic</h3>
+                <p class="card-description">Cargador para tipo C y tipo V8 5A.</p>
+            </div>
+        </div>
+        
+        <div class="card">
+            <img src="images/carga4.jpg" alt="Artículo 4">
+            <div class="card-content">
+                <h3 class="card-title">Cargador Iphone </h3>
+                <p class="card-description">tipo USB a Lighting y tipo C a Lighting.</p>
+            </div>
+        </div>
+        
+        <div class="card">
+            <img src="images/carga5.jpg" alt="Artículo 5">
+            <div class="card-content">
+                <h3 class="card-title">Cargador Xion</h3>
+                <p class="card-description">Cargador Tipo C 3.1AMP.</p>
+            </div>
+        </div>
+        
+        <div class="card">
+            <img src="images/carga6.jpg" alt="Artículo 6">
+            <div class="card-content">
+                <h3 class="card-title">Cable Tipo C</h3>
+                <p class="card-description">Cable de muy buena calidad.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="images/carga7.jpg" alt="Artículo 7">
+            <div class="card-content">
+                <h3 class="card-title">Cargador Xiaomi </h3>
+                <p class="card-description">120W carga rapida .</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="images/carga8.jpg" alt="Artículo 8">
+            <div class="card-content">
+                <h3 class="card-title">Cargador Samsumg</h3>
+                <p class="card-description">45W carga rapida.</p>
+            </div>
+        </div>
+        
+        <div class="card">
+            <img src="images/carga9.jpg" alt="Artículo 9">
+            <div class="card-content">
+                <h3 class="card-title">Cargador BAKU</h3>
+                <p class="card-description">Cgador doble puerto USB e incluye cable tipo C, V8.</p>
+            </div>
+        </div>
+        
+        <div class="card">
+            <img src="images/carga10.jpg" alt="Artículo 10">
+            <div class="card-content">
+                <h3 class="card-title">Adaptador Iphone </h3>
+                <p class="card-description">20w USB-C 90%.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="images/carga11.jpg" alt="Artículo 11">
+            <div class="card-content">
+                <h3 class="card-title">Cargador Amaya</h3>
+                <p class="card-description">Excelente carga eficiente 2.4A .</p>
+            </div>
+        </div>
+        
+        <div class="card">
+            <img src="images/carga12.jpg" alt="Artículo 12">
+            <div class="card-content">
+                <h3 class="card-title">Cargador BAKU</h3>
+                <p class="card-description">Cargador tipo C 25W carga rapida incluye cable para Iphone o Tipo C.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
